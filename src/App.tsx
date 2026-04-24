@@ -9,7 +9,7 @@ import { MoveLeft } from "lucide-react";
 import { menuLists } from "./types/fichier";
 import { CardList } from "./data/categorie";
 import Card from "./composants/categoryCard";
-import { productList } from "./data/products";
+import { products } from "./data/products";
 import { compteAReboursList } from "./data/CompteARebours";
 import { FaFacebookF, FaInstagram, FaStar, FaTwitter } from "react-icons/fa";
 import { avisList } from "./data/avis";
@@ -18,6 +18,7 @@ import { serviceList } from "./data/service";
 import { paymentCardLogo } from "./data/PaymentCardLogo";
 import { mesPages } from "./data/mesPages";
 import { information } from "./data/information";
+import ProductCard from "./composants/ProductCard";
 
 function App() {
   return (
@@ -114,7 +115,10 @@ function App() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 ">
-              {productList.map((produit, index) => (
+              {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+              {/* {productList.map((produit, index) => (
                 <div
                   key={index}
                   className="rounded-2xl bg-white p-4 shadow-md hover:shadow-lg transition-shadow"
@@ -128,7 +132,7 @@ function App() {
                   <p className="text-gray-500">{produit.categorie}</p>
                   <p className="mt-2 text-lg font-bold">{produit.price}</p>
                 </div>
-              ))}
+              ))} */}
             </div>
           </Container>
         </section>

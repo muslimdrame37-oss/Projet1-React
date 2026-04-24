@@ -1,53 +1,69 @@
-export const productList = [
+import { type Product } from "../types/product";
+
+export const products: Product [] = [
   {
-    title: "Costume Classique",
-    categorie: "Costumes",
-    price: 199.99,
     image: "/img/costumes.jpeg",
+    id: 1,
+    titre: "Costume Classique",
+    category: "Costumes",
+    price: 199.99,
+    discount: 170
   },
   {
-    title: "Robe de Soirée",
-    categorie: "Robes",
+    image:"/img/Complet Tunique Homme.jpeg" ,
+    id: 2,
+    titre: "Robe de Soirée",
+    category: "Robes",
     price: 149.99,
-    image: "/img/Complet Tunique Homme.jpeg",
+    discount: 120
   },
   {
-    title: "Chemise en Lin",
-    categorie: "Chemises",
+    image: "/img/SHUZIA Women's Boston Clog Wide Fit Burgundy Slip On Mule Holiday Vacay Vibe For And Summer Shoes Spring Shoes Spring Break Easter.jpeg",
+    id: 3,
+    titre: "Chemise en Lin",
+    category: "Chemises",
     price: 49.99,
-    image:
-      "/img/SHUZIA Women's Boston Clog Wide Fit Burgundy Slip On Mule Holiday Vacay Vibe For And Summer Shoes Spring Shoes Spring Break Easter.jpeg",
+    discount: 40
   },
   {
-    title: "Pantalon Chino",
-    categorie: "Pantalons",
-    price: 59.99,
-    image: "/img/Modèle Super Cent Homme.jpeg",
-  },
-  {
-    title: "Veste en Cuir",
-    categorie: "Vestes",
-    price: 299.99,
-    image:
-      "/img/2023 Nova Chegada De Sandálias Casuais Masculinas Da Moda.jpeg",
-  },
-  {
-    title: "Jupe Plissée",
-    categorie: "Jupes",
-    price: 79.99,
     image: "/img/Tenue Mariage Homme.jpeg",
+    id: 4,
+    titre: "Pantalon Chino",
+    category: "Pantalons",
+    price: 59.99,
+    discount: 50
   },
   {
-    title: "Pull en Cachemire",
-    categorie: "Pulls",
-    price: 129.99,
+    image: "/img/Modèle Super Cent Homme.jpeg",
+    id: 5,
+    titre: "Veste en Cuir",
+    category: "Vestes",
+    price: 299.99,
+    discount: 250,
+  },
+  {
+    image: "/img/2023 Nova Chegada De Sandálias Casuais Masculinas Da Moda.jpeg",
+    id: 6,
+    titre: "Jupe Plissée",
+    category: "Jupes",
+    price: 79.99,
+    discount: 60
+  },
+  {
     image: "/img/Broderie_Homme.jpeg",
+    id: 8,
+    titre: "Pull en Cachemire",
+    category: "Pulls",
+    price: 129.99,
+    discount: 100
   },
   {
-    title: "Short en Denim",
-    categorie: "Shorts",
-    price: 39.99,
     image: "/img/boubouafricain.jpeg",
+    id: 9,
+    titre: "Short en Denim",
+    category: "Shorts",
+    price: 39.99,
+    discount: 30
   },
 ];
 
