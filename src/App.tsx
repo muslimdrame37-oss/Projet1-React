@@ -108,19 +108,19 @@ function App() {
           </Container>
         </section>
 
-        <section className="mt-20">
+        <section className="mt-30">
           <Container>
             <div className="flex items-center justify-center">
               <p className="text-5xl font-bold">Nos meilleures ventes</p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 ">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-10">
               {products.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
 
               {/* Ancienne méthodes */}
-              
+
               {/* {productList.map((produit, index) => (
                 <div
                   key={index}

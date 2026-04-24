@@ -15,7 +15,7 @@ export default function ProductCard({ product }: Props) {
       <p className="text-md text-gray-400">{product.category}</p>
       <div className="flex items-center justify-center gap-2">
         <p className="text-gray-600">{product.price}</p>
-        <p className="text-gray-300">{product.discount}</p>
+        <p className=" line-through text-gray-500">{product.discount} CFA</p>
       </div>
       <Button variant="primary" className="">
         Ajouter au panier
