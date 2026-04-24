@@ -118,6 +118,9 @@ function App() {
               {products.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
+
+              {/* Ancienne méthodes */}
+              
               {/* {productList.map((produit, index) => (
                 <div
                   key={index}
