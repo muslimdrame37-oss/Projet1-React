@@ -1,0 +1,1 @@
+import { Type categorie } from "lucide-react";

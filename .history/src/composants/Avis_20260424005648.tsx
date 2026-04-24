@@ -1,0 +1,13 @@
+import React from "react";
+
+interface Props {
+  icon: string;
+  comment: string;
+  image: string;
+  name: string;
+  profession: string;
+}
+
+export default function Avis({icon, comment, image, name, profession}: Props) {
+  return <div>Avis</div>;
+}

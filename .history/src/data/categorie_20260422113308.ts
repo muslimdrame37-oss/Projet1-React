@@ -1,0 +1,1 @@
+import { Type ategorie } from "../types/categorie";
