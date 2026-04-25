@@ -1,4 +1,5 @@
-import { CircleDollarSign, Cuboid, CuboidIcon, type LucideIcon } from "lucide-react"
+import { CircleDollarSign, Cuboid, Headset, WalletCards, type LucideIcon } from "lucide-react"
+
 
 export const serviceList: ServiceList[] = [
   {
@@ -12,13 +13,13 @@ export const serviceList: ServiceList[] = [
     texte: "Paiement sécurisé avec les meilleures méthodes de paiement",
   },
   {
-    icon: CuboidIcon,
+    icon: Headset,
     titre: "Service Client 24/7",
     texte:
       "Service client disponible 24 heures sur 24 et 7 jours sur 7 pour répondre à toutes vos questions",
   },
   {
-    icon: CuboidIcon,
+    icon: WalletCards,
     titre: "Paiement Facile",
     texte: "Paiement facile avec les meilleures méthodes de paiement",
   },

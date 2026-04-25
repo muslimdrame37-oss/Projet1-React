@@ -6,7 +6,7 @@ interface Props {
 
 export default function Services({ icon, titre, texte }: Props) {
   return (
-    <div>
+    <div className="">
       {icon}
       <h2 className="text-2xl font-semibold"> {titre} </h2>
       <p className="text-sm"> {texte} </p>
