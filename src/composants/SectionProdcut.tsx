@@ -1,23 +1,23 @@
-import Container from './Container'
-import { products } from '../data/products'
-import ProductCard from './ProductCard'
+import Container from "./Container";
+import { products } from "../data/products";
+import ProductCard from "./ProductCard";
 
 export default function SectionProdcut() {
   return (
-          <section className="mt-30">
-        <Container>
-          <div className="flex items-center justify-center">
-            <p className="text-5xl font-bold">Nos meilleures ventes</p>
-          </div>
+    <section className="mt-30">
+      <Container>
+        <div className="flex items-center justify-center">
+          <p className="text-5xl font-bold">Nos meilleures ventes</p>
+        </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-10">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-10">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
 
-            {/* Ancienne méthodes */}
+          {/* Ancienne méthodes */}
 
-            {/* {productList.map((produit, index) => (
+          {/* {productList.map((produit, index) => (
                 <div
                   key={index}
                   className="rounded-2xl bg-white p-4 shadow-md hover:shadow-lg transition-shadow"
@@ -32,8 +32,8 @@ export default function SectionProdcut() {
                   <p className="mt-2 text-lg font-bold">{produit.price}</p>
                 </div>
               ))} */}
-          </div>
-        </Container>
-      </section>
-  )
+        </div>
+      </Container>
+    </section>
+  );
 }

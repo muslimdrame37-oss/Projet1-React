@@ -10,7 +10,11 @@ export default function ProductCard({ product }: Props) {
     <div
       className={`flex flex-col items-center justify-end bg-cover bg-center rounded-2xl bg-white p-4 shadow-md hover:shadow-lg transition-shadow`}
     >
-      <img src={product.image} alt={product.titre} className="w-full h-90 mb-4 rounded-2xl object-cover"/>
+      <img
+        src={product.image}
+        alt={product.titre}
+        className="w-full h-90 mb-4 rounded-2xl object-cover"
+      />
       <p className="text-lg font-bold">{product.titre}</p>
       <p className="text-md text-gray-400">{product.category}</p>
       <div className="flex items-center justify-center gap-2">
