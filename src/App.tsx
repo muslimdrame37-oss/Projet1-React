@@ -1,11 +1,9 @@
 // import React from "react"
-import { Heart, Mail, MapPin, PhoneForwarded } from "lucide-react";
-import { Search } from "lucide-react";
-import { ShoppingBag } from "lucide-react";
-import { Button } from "./composants/Button";
+import { Mail, MapPin, PhoneForwarded } from "lucide-react";
+
 import Container from "./composants/Container";
 import { MoveRight } from "lucide-react";
-import { menuLists } from "./types/fichier";
+
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { paymentCardLogo } from "./data/PaymentCardLogo";
 import { mesPages } from "./data/mesPages";
@@ -13,39 +11,17 @@ import { information } from "./data/information";
 import { Link, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductListingPage from "./pages/ProductListingPage";
+import NavBar from "./composants/NavBar";
 
 function App() {
   return (
     <body className=" ">
-      <header className="container mx-auto px-4 py-8 shadow-md">
-        <Container className="flex justify-between items-center">
-          <img src="/img/Logo + Text.png" alt="" width={140} />
-
-          <nav>
-            <ul className="flex gap-4">
-              {menuLists.map((menu, index) => (
-                <li key={index}>
-                  <Link to={menu.url}>{menu.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div className="flex items-center gap-4">
-            <Heart size={24} />
-            <Search size={24} />
-            <ShoppingBag size={24} />
-            <Button variant="primary" className="ml-4">
-              Login
-            </Button>
-          </div>
-        </Container>
-      </header>
+      <NavBar/>
 
       {/* main */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Boutique" element={<ProductListingPage />} />
+        <Route path="/shop" element={<ProductListingPage />} />
 
         {/* ici ça me dit que le ProductListingFilferCollapsPage est introuvable */}
         {/* <Route path="/Boutique/:id" element= {<ProductListingFilferCollapsPage />} /> */}
