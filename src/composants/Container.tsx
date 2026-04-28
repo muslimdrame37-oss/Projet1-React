@@ -4,5 +4,7 @@ type Props = {
 };
 
 export default function Container({ children, className = "" }: Props) {
-  return <div className={`container-app ${className}`}>{children}</div>;
+  return <div className={`container-app ${className}`}>
+    {children}
+    </div>;
 }

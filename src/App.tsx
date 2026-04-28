@@ -15,37 +15,31 @@ import Footer from "./composants/Footer";
 
 function App() {
   return (
-    // <body>
-
-    //   <Routes>
-    //     <Route path="/" element={<HomePage />} />
-    //     <Route path="/shop" element={<ProductListingPage />} />
-    //   </Routes>
-
-    // </body>
-    <main>
+    <body>
       <NavBar />
-      {/* hero section */}
-      <SectionHero />
-      {/* section catégorie */}
-      <SectionCategorie />
+      <main>
+        {/* hero section */}
+        <SectionHero />
+        {/* section catégorie */}
+        <SectionCategorie />
 
-      {/* section product */}
-      <SectionProdcut />
+        {/* section product */}
+        <SectionProdcut />
 
-      {/* section promo */}
-      <SectionPromo />
+        {/* section promo */}
+        <SectionPromo />
 
-      {/* section témoignage */}
-      <SectionTemoignage />
+        {/* section témoignage */}
+        <SectionTemoignage />
 
-      {/* section social media */}
-      <SectionSocialMedia />
+        {/* section social media */}
+        <SectionSocialMedia />
 
-      {/* section service */}
-      <SectionService />
+        {/* section service */}
+        <SectionService />
+      </main>
       <Footer />
-    </main>
+    </body>
   );
 }
 

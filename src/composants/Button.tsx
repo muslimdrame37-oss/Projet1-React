@@ -3,7 +3,7 @@ import React from "react";
 type variant = "primary" | "secondary" | "danger";
 
 type Props = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-  variant?: variant;
+  variant: variant;
 };
 
 export function Button({ variant = "primary", className, ...rest }: Props) {
@@ -14,6 +14,7 @@ export function Button({ variant = "primary", className, ...rest }: Props) {
     secondary:
       "border border-gray-200 bg-slate-100 text-slate-900 hover:bg-slate-300",
     danger: "bg-red-600 text-white hover:bg-red-500",
+    salam : "bg-green-600"
   };
 
   return (
