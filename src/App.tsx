@@ -1,26 +1,51 @@
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import ProductListingPage from "./pages/ProductListingPage";
+// import { Routes, Route } from "react-router-dom";
+// import HomePage from "./pages/HomePage";
+// import ProductListingPage from "./pages/ProductListingPage";
+// import NavBar from "./composants/NavBar";
+// import Footer from "./composants/Footer";
+import SectionHero from "./composants/SectionHero";
+import SectionCategorie from "./composants/SectionCategorie";
+import SectionProdcut from "./composants/SectionProdcut";
+import SectionPromo from "./composants/SectionPromo";
+import SectionTemoignage from "./composants/SectionTemoignage";
+import SectionSocialMedia from "./composants/SectionSocialMedia";
+import SectionService from "./composants/SectionService";
 import NavBar from "./composants/NavBar";
 import Footer from "./composants/Footer";
 
 function App() {
   return (
-    <body className=" ">
-      <NavBar/>
+    // <body>
 
-      {/* main */}
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/shop" element={<ProductListingPage />} />
+    //   <Routes>
+    //     <Route path="/" element={<HomePage />} />
+    //     <Route path="/shop" element={<ProductListingPage />} />
+    //   </Routes>
 
-        {/* ici ça me dit que le ProductListingFilferCollapsPage est introuvable */}
-        {/* <Route path="/Boutique/:id" element= {<ProductListingFilferCollapsPage />} /> */}
-      </Routes>
-      {/* main */}
+    // </body>
+    <main>
+      <NavBar />
+      {/* hero section */}
+      <SectionHero />
+      {/* section catégorie */}
+      <SectionCategorie />
 
-      <Footer/>
-    </body>
+      {/* section product */}
+      <SectionProdcut />
+
+      {/* section promo */}
+      <SectionPromo />
+
+      {/* section témoignage */}
+      <SectionTemoignage />
+
+      {/* section social media */}
+      <SectionSocialMedia />
+
+      {/* section service */}
+      <SectionService />
+      <Footer />
+    </main>
   );
 }
 

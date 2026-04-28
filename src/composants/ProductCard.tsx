@@ -8,7 +8,7 @@ interface Props {
 export default function ProductCard({ product }: Props) {
   return (
     <div
-      className={`flex flex-col items-center justify-end bg-cover bg-center rounded-2xl bg-white p-4 shadow-md hover:shadow-lg transition-shadow`}
+      className={`flex flex-col items-center justify-end bg-cover bg-center rounded-2xl bg-white p-4 shadow-md hover:shadow-lg transition-shadow border border-[#dbe6e0] border-border`}
     >
       <img
         src={product.image}

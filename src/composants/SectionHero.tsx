@@ -4,7 +4,7 @@ import Container from "./Container";
 
 export default function SectionHero() {
   return (
-    <section className="container max-w-7xl mx-auto mt-5">
+    <section className="container max-w-7xl mx-auto mt-5 border border-[#dbe6e0] border-border">
       <Container className="relative flex items-center bg-gray-100 justify-center gap-6 px-8">
         <div className="relative flex flex-col items-start w-1/2 gap-4">
           <p className="text-lg text-gray-600">

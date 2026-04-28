@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 
 export default function SectionTemoignage() {
   return (
-    <section className="bg-gray-50 py-20 mt-20">
+    <section className="bg-gray-50 py-20 mt-20 ">
       <Container className="flex flex-col gap-15">
         <div className="flex justify-between">
           <h2 className="text-5xl ">Que disent nos clients ?</h2>
@@ -20,11 +20,11 @@ export default function SectionTemoignage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-6 ">
           {avisList.map((avis, index) => (
             <div
               key={index}
-              className="flex flex-col bg-white gap-4 rounded-lg shadow px-6 py-4 hover:shadow-lg transition-shadow"
+              className="flex flex-col bg-white gap-4 rounded-lg shadow px-6 py-4 hover:shadow-lg transition-shadow border border-[#dbe6e0] border-border"
             >
               <div>
                 <div className="flex gap-1">

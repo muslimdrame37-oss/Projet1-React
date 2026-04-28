@@ -1,3 +1,5 @@
+// import { ChevronDown, type LucideIcon } from "lucide-react";
+
 export const menuLists:MenuLists[] = [
   { name: "Accueil", url: "/" },
   { name: "Boutique", url: "/shop" },
@@ -9,4 +11,5 @@ export const menuLists:MenuLists[] = [
 interface MenuLists {
     name: string
     url: string
+    
 };

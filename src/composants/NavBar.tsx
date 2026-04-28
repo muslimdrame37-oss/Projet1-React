@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <header className="container mx-auto px-4 py-8 shadow-md">
+    <header className="container mx-auto px-4 py-8 shadow-sm border border-[#dbe6e0] border-border">
       <Container className="flex justify-between items-center">
         <img src="/img/Logo + Text.png" alt="" width={140} />
 
@@ -21,10 +21,16 @@ export default function NavBar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Heart size={24} />
-          <Search size={24} />
-          <ShoppingBag size={24} />
-          <Button variant="primary" className="ml-4">
+          <div className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border border-[#dbe6e0] shadow-sm">
+            <Heart size={24} />
+          </div>
+          <div className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border border-[#dbe6e0] shadow-sm">
+            <Search size={24} />
+          </div>
+          <div className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border border-[#dbe6e0] shadow-sm">
+            <ShoppingBag size={24} />
+          </div>
+          <Button variant="primary" className="ml-4 shadow-lg shadow-slate-100">
             Login
           </Button>
         </div>
